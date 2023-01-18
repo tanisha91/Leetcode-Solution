@@ -1,13 +1,13 @@
 class Solution {
     public boolean isPerfectSquare(int num) {
-        long start=1;
-        long end=num;
-        while(start<=end){
-          long mid=(start+end)/2;
+       long beg=1;
+       long end=num;
+        while(beg<=end){
+           long mid=(beg+end)/2;
             if(mid*mid==num)
                 return true;
             else if(mid*mid<num)
-                start=mid+1;
+                beg=mid+1;
             else
                 end=mid-1;
         }
