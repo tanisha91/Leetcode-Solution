@@ -20,7 +20,7 @@ class Solution {
         
     }
     private List<Integer> ans=new ArrayList<>();
-    private void dfs(TreeNode node){
+    public void dfs(TreeNode node){
         if(node==null){
             return;
         }
